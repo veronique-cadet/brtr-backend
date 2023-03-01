@@ -11,7 +11,7 @@ class BartersController < ApplicationController
     private 
     def barter_params
         params.permit(
-        :proposer_id, :recipient_id, :recipient_skill_id, :proposer_skill_id
+        :proposer_id, :recipient_id, :recipient_skill_id, :proposer_skill_id, :agreed, :proposer_hours, :recipient_hours
         )
     end 
 end

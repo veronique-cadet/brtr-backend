@@ -20,6 +20,9 @@ ActiveRecord::Schema.define(version: 2023_02_23_213649) do
     t.integer "recipient_id"
     t.integer "proposer_skill_id"
     t.integer "recipient_skill_id"
+    t.boolean "agreed"
+    t.integer "proposer_hours"
+    t.integer "recipient_hours"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

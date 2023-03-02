@@ -14,6 +14,13 @@ class BartersController < ApplicationController
         head :no_content
         end
 
+    def update
+        barter = Barter.find(params[:id])
+        barter.update!(barter_params)
+        render json: barter, status: :accepted
+     end
+    
+
     private 
     def barter_params
         params.permit(

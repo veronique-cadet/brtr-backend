@@ -24,5 +24,6 @@ seven= UserSkill.create(user_id: vero.id, skill_id: cooking.id, years_exp: 1, av
 Barter.create(proposer_id: vero.id, recipient_id: cindy.id, proposer_skill_id: one.id, recipient_skill_id: three.id, proposer_hours: 2, recipient_hours: 4, agreed: false)
 Barter.create(proposer_id: trevor.id, recipient_id: vero.id, proposer_skill_id: six.id, recipient_skill_id: two.id, proposer_hours: 7, recipient_hours: 5, agreed: true)
 Barter.create(proposer_id: cindy.id, recipient_id: vero.id, proposer_skill_id: seven.id, recipient_skill_id: four.id, proposer_hours: 8, recipient_hours: 5, agreed: false)
+Barter.create(proposer_id: trevor.id, recipient_id: vero.id, proposer_skill_id: six.id, recipient_skill_id: four.id, proposer_hours: 8, recipient_hours: 5, agreed: false)
 
 puts "seeding ended"

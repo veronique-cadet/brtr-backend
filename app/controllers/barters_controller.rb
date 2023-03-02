@@ -8,6 +8,12 @@ class BartersController < ApplicationController
         render json: barter 
     end 
 
+    def destroy
+        barter = Barter.find(params[:id])
+        barter.destroy
+        head :no_content
+        end
+
     private 
     def barter_params
         params.permit(

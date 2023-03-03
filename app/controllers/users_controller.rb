@@ -14,11 +14,16 @@ class UsersController < ApplicationController
     def show
       render json: @current_user
     end
-  
+
+    def update
+      user = User.find(session[:user_id])
+      user.update!(user_params)
+      render json: user, status: :accepted
+  end
     private
   
     def user_params
-      params.permit(:first_name, :last_name, :email, :password)
+      params.permit(:first_name, :last_name, :email, :password, :age, :picture, :city, :state, :bio)
     end
   
   end

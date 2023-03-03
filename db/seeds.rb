@@ -2,7 +2,7 @@
  
 puts "seeding started"
 
-vero= User.create(first_name: "Veronique", last_name: "Cadet", email: "cadetvero@gmail.com", password: "123", age: 31, bio: "I am Software Engineer and Musicain from New York. I love to travel! I am a hardworker and can help you with any of my skills I can offer!", picture: "./vero.png", city: "Queens", state: "NY", rating: 5 )
+vero= User.create(first_name: "Veronique", last_name: "Cadet", email: "cadetvero@gmail.com", password: "123", age: 31, bio: "I am Software Engineer and Musician from New York. I love to travel! I am a hardworker and can help you with any of my skills I can offer!", picture: "./vero.png", city: "Queens", state: "NY", rating: 5 )
 cindy= User.create(first_name: "Cindy", last_name: "Lauper", email: "cindy@gmail.com", password: "123", age: 31, bio: " I am singer and songwriter. My strong work ethic allows me to apply my skills to any task you require assistance with.", picture: "https://cdn.britannica.com/10/172210-050-24612D72/Cyndi-Lauper-Tony-Award.jpg?w=400&amp;h=300&amp;c=crop", city: "New York", state: "NY", rating: 5 )
 trevor= User.create(first_name: "Trevor", last_name: "Noah", email: "trevornoah@gmail.com", password: "123", age: 31, bio: " I am comedian and daytime host, originally from South Africa. My strong work ethic allows me to apply my skills to any task you require assistance with.", picture: "https://static01.nyt.com/images/2022/09/29/multimedia/29xp-trevornoah/29xp-trevornoah-mediumSquareAt3X.jpg", city: "New York", state: "NY", rating: 5 )
 jasmine = User.create(first_name: "Jasmine", last_name: "Lee", email: "jasmine.lee@gmail.com", password: "password1", age: 23, bio: "Hi, my name is Jasmine and I'm a recent graduate from NYU. I majored in journalism and I'm currently working as a writer. In my free time, I like to read, hike, and try out new restaurants in the city. My strong work ethic allows me to apply my skills to any task you require assistance with.", picture: "https://randomuser.me/api/portraits/women/10.jpg", city: "New York", state: "NY", rating: 4.5 )
@@ -79,7 +79,6 @@ eight= UserSkill.create(user_id: vero.id, skill_id: songwriting.id, years_exp: 1
 UserSkill.create(user_id: trevor.id, skill_id: comedy.id, years_exp: 10, avg_hr: 100, proof_des: "hi", proof_url: "hi")
 UserSkill.create(user_id: vero.id, skill_id: french.id, years_exp: 5, avg_hr: 100, proof_des: "hi", proof_url: "hi")
 UserSkill.create(user_id: trevor.id, skill_id: public_speaking.id, years_exp: 10, avg_hr: 100, proof_des: "hi", proof_url: "hi")
-UserSkill.create(user_id: vero.id, skill_id: songwriting.id, years_exp: 1, avg_hr: 100, proof_des: "hi", proof_url: "hi")
 UserSkill.create(user_id: jasmine.id, skill_id: songwriting.id, years_exp: 1, avg_hr: 100, proof_des: "hi", proof_url: "hi")
 UserSkill.create(user_id: jasmine.id, skill_id: songwriting.id, years_exp: 1, avg_hr: 100, proof_des: "hi", proof_url: "hi")
 UserSkill.create(user_id: jasmine.id, skill_id: writing.id, years_exp: 7, avg_hr: 100, proof_des: "hi", proof_url: "hi")

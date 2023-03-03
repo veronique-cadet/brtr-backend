@@ -1,7 +1,7 @@
 class SkillsController < ApplicationController
 
 def index
-render json: Skill.all
+render json: Skill.all.sort_by{rand}
 end
 
 def show 

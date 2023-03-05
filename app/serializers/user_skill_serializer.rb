@@ -6,4 +6,9 @@ class UserSkillSerializer < ActiveModel::Serializer
   def name
     object.skill.name
   end
+
+   def ski
+    object.user.user_skills
+   end
+
 end

@@ -17,7 +17,7 @@ class BartersController < ApplicationController
         barter = Barter.find(params[:id])
         barter.destroy
         head :no_content
-        end
+     end
 
     def update
         barter = Barter.find(params[:id])

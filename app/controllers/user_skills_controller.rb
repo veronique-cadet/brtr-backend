@@ -6,5 +6,12 @@ class UserSkillsController < ApplicationController
     def show 
         user_skill = UserSkill.find(params[:id])
         render json: user_skill
-        end
+    end
+
+    def destroy
+        uskill = UserSkill.find(params[:id])
+        uskill.destroy
+        head :no_content
+    end
+
 end

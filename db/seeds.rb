@@ -68,7 +68,7 @@ journalism = Skill.create(name: "Journalism")
 
 
 
-one= UserSkill.create(user_id: vero.id, skill_id: programming.id, years_exp: 1, avg_hr: 100, proof_des: "hi", proof_url: "hi")
+one= UserSkill.create(user_id: vero.id, skill_id: programming.id, years_exp: 1, avg_hr: 100, proof_des: "hi my name is wow how are you", proof_url: "hi")
 two= UserSkill.create(user_id: vero.id, skill_id: singing.id, years_exp: 20, avg_hr: 100, proof_des: "hi", proof_url: "hi")
 three= UserSkill.create(user_id: cindy.id, skill_id: guitar.id, years_exp: 15, avg_hr: 100, proof_des: "hi", proof_url: "hi")
 four= UserSkill.create(user_id: cindy.id, skill_id: singing.id, years_exp: 20, avg_hr: 100, proof_des: "hi", proof_url: "hi")

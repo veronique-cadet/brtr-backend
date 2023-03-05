@@ -14,4 +14,21 @@ class UserSkillsController < ApplicationController
         head :no_content
     end
 
+    def update
+        uskill = UserSkill.find(params[:id])
+        uskill.update!(user_skill_params)
+        render json: uskill, status: :accepted
+    end
+
+    def create 
+        uskill = UserSkill.create!(user_skill_params)
+        render json: uskill 
+    end 
+
+        private
+  
+        def user_skill_params
+          params.permit(:years_exp, :proof_des, :proof_url, :user_id, :skill_id)
+        end
+
 end

@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 2023_03_06_021337) do
     t.datetime "date"
     t.integer "time"
     t.integer "barter_id"
+    t.integer "hours"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

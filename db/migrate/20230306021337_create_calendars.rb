@@ -8,6 +8,7 @@ class CreateCalendars < ActiveRecord::Migration[6.1]
       t.datetime :date
       t.integer :time
       t.integer :barter_id
+      t.integer :hours
 
       t.timestamps
     end

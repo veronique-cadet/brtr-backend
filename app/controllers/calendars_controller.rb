@@ -10,7 +10,17 @@ def create
     render json: cal
 end 
 
+def destroy
+    cal = Calendar.find(params[:id])
+    cal.destroy
+    head :no_content
+ end
 
+ def update
+    cal= Calendar.find(params[:id])
+    cal.update!(cal_params)
+    render json: cal, status: :accepted
+ end
 
 private 
 

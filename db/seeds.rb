@@ -196,5 +196,6 @@ Barter.create(proposer_id: vero.id, recipient_id: trevor.id, proposer_skill_id: 
 
 Calendar.create(user_skill_id: two.id, scheduling_user_id: vero.id, barter_id: 2,recipient_user_id: trevor.id, complete: false, hours: 1)
 Calendar.create(user_skill_id: three.id, scheduling_user_id: cindy.id, barter_id: 1, recipient_user_id: vero.id, complete: false, hours: 2)
-
+Calendar.create(user_skill_id: three.id, scheduling_user_id: vero.id, barter_id: 1, recipient_user_id: cindy.id, complete: true, hours: 4)
+Calendar.create(user_skill_id: six.id, scheduling_user_id: trevor.id, barter_id: 2, recipient_user_id: vero.id, complete: false, hours: 2)
 puts "seeding ended"

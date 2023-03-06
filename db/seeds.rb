@@ -51,7 +51,7 @@ meditation = Skill.create(name: "Meditation")
 painting = Skill.create(name: "Painting")
 programming = Skill.create(name: "Programming")
 data_analysis = Skill.create(name: "Data Analysis")
-user_experience_design = Skill.create(name: "User Experience Design")
+user_experience_design = Skill.create(name: "UX Design")
 social_media_marketing = Skill.create(name: "Social Media")
 fashion_design = Skill.create(name: "Fashion Design")
 music_production = Skill.create(name: "Music Production")
@@ -193,5 +193,8 @@ Barter.create(proposer_id: trevor.id, recipient_id: vero.id, proposer_skill_id: 
 Barter.create(proposer_id: cindy.id, recipient_id: vero.id, proposer_skill_id: four.id, recipient_skill_id: seven.id, proposer_hours: 8, recipient_hours: 5, agreed: false)
 Barter.create(proposer_id: trevor.id, recipient_id: vero.id, proposer_skill_id: six.id, recipient_skill_id: four.id, proposer_hours: 8, recipient_hours: 5, agreed: false)
 Barter.create(proposer_id: vero.id, recipient_id: trevor.id, proposer_skill_id: two.id, recipient_skill_id: six.id, proposer_hours: 11, recipient_hours: 10, agreed: false)
+
+Calendar.create(user_skill_id: two.id, scheduling_user_id: vero.id, barter_id: 2,recipient_user_id: trevor.id, complete: false )
+Calendar.create(user_skill_id: three.id, scheduling_user_id: cindy.id, barter_id: 1, recipient_user_id: vero.id, complete: false )
 
 puts "seeding ended"

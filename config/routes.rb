@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :reveiws
   resources :calendars
   resources :barters
   resources :user_skills

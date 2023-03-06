@@ -10,4 +10,6 @@ has_many :recieved_barters, class_name: :Barter, foreign_key: "recipient_id"
 has_many :scheduled_calendars, class_name: :Calendar, foreign_key: "scheduling_user_id"
 has_many :receieved_calendars, class_name: :Calendar, foreign_key: "recipient_user_id"
 
+has_many :reveiws, class_name: :Reveiws, foreign_key: "reviewer_id"
+has_many :reveiws, class_name: :Reveiws, foreign_key: "reviewee_id"
 end

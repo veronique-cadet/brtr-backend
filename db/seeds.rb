@@ -196,6 +196,17 @@ Barter.create(proposer_id: vero.id, recipient_id: trevor.id, proposer_skill_id: 
 
 Calendar.create(user_skill_id: two.id, scheduling_user_id: vero.id, barter_id: 2,recipient_user_id: trevor.id, complete: false, hours: 1)
 Calendar.create(user_skill_id: three.id, scheduling_user_id: cindy.id, barter_id: 1, recipient_user_id: vero.id, complete: false, hours: 2)
-Calendar.create(user_skill_id: three.id, scheduling_user_id: vero.id, barter_id: 1, recipient_user_id: cindy.id, complete: true, hours: 4)
+Calendar.create(user_skill_id: one.id, scheduling_user_id: vero.id, barter_id: 1, recipient_user_id: cindy.id, complete: true, hours: 4)
 Calendar.create(user_skill_id: six.id, scheduling_user_id: trevor.id, barter_id: 2, recipient_user_id: vero.id, complete: false, hours: 2)
+
+
+Reveiw.create(user_skill_id: one.id, reviewer_id: cindy.id, reviewee_id: vero.id, barter_id: 1, calendar_id: 1, rating: 5, tile: "Veronique Is Awesome!", comment:"I recently had the pleasure of attending a programming lesson with Veronique, and I have to say, it was an absolute game-changer! Veronique is an exceptional teacher, and her ability to break down complex programming concepts into easily understandable parts is truly remarkable.Thanks to Veronique's expert guidance, I was able to learn new programming skills and techniques that I never thought possible. I highly recommend her to anyone looking to improve their programming abilities, whether you're a beginner or an experienced coder", helpful: 0,review_date: 03-04-2023)
+Reveiw.create(user_skill_id: one.id, reviewer_id: vero.id, reviewee_id: cindy.id, barter_id: 1, calendar_id: 1, rating: 5, tile: "Cindy is Awesome", comment:"Best Teacher!", helpful: 0)
+
+
+
+
+
 puts "seeding ended"
+
+

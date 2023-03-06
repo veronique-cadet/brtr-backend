@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_06_021337) do
+ActiveRecord::Schema.define(version: 2023_03_06_202948) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,6 +36,21 @@ ActiveRecord::Schema.define(version: 2023_03_06_021337) do
     t.integer "time"
     t.integer "barter_id"
     t.integer "hours"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "reveiws", force: :cascade do |t|
+    t.integer "reviewer_id"
+    t.integer "reviewee_id"
+    t.integer "barter_id"
+    t.integer "calendar_id"
+    t.integer "rating"
+    t.string "tile"
+    t.string "comment"
+    t.integer "helpful"
+    t.datetime "review_date"
+    t.integer "user_skill_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

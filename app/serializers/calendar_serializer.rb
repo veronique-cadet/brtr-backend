@@ -4,5 +4,6 @@ class CalendarSerializer < ActiveModel::Serializer
   has_one :scheduling_user
   has_one :recipient_user
   has_one :user_skill
+  has_one :barter
 
 end

@@ -1,7 +1,8 @@
 class UserSkillSerializer < ActiveModel::Serializer
-  attributes :id, :years_exp, :avg_hr, :proof_des, :proof_url, :name
+  attributes :id, :years_exp, :avg_hr, :proof_des, :proof_url, :name, :proposed_barters, :recieved_barters
   has_one :user
   has_one :skill
+ 
   
   def name
     object.skill.name
@@ -10,5 +11,13 @@ class UserSkillSerializer < ActiveModel::Serializer
    def ski
     object.user.user_skills
    end
+
+  def proposed_barters
+    object.user.proposed_barters
+  end
+
+  def recieved_barters
+    object.user.proposed_barters
+  end
 
 end

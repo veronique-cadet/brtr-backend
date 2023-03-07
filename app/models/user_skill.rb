@@ -6,5 +6,5 @@ class UserSkill < ApplicationRecord
   has_many :barters, foreign_key: "recipient_skill_id"
   has_many :calendars
   has_many :reveiws
-  
+
 end

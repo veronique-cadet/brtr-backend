@@ -80,7 +80,6 @@ UserSkill.create(user_id: trevor.id, skill_id: comedy.id, years_exp: 10, avg_hr:
 UserSkill.create(user_id: vero.id, skill_id: french.id, years_exp: 5, avg_hr: 100, proof_des: "hi", proof_url: "hi")
 UserSkill.create(user_id: trevor.id, skill_id: public_speaking.id, years_exp: 10, avg_hr: 100, proof_des: "hi", proof_url: "hi")
 UserSkill.create(user_id: jasmine.id, skill_id: songwriting.id, years_exp: 1, avg_hr: 100, proof_des: "hi", proof_url: "hi")
-UserSkill.create(user_id: jasmine.id, skill_id: songwriting.id, years_exp: 1, avg_hr: 100, proof_des: "hi", proof_url: "hi")
 UserSkill.create(user_id: jasmine.id, skill_id: writing.id, years_exp: 7, avg_hr: 100, proof_des: "hi", proof_url: "hi")
 UserSkill.create(user_id: jasmine.id, skill_id: journalism.id, years_exp: 4, avg_hr: 100, proof_des: "hi", proof_url: "hi")
 UserSkill.create(user_id: michael.id, skill_id: guitar.id, years_exp: 6, avg_hr: 100, proof_des: "hi", proof_url: "hi")
@@ -135,7 +134,6 @@ UserSkill.create(user_id: jasmine.id, skill_id: photography.id, years_exp: 8, av
 UserSkill.create(user_id: jasmine.id, skill_id: drawing.id, years_exp: 8, avg_hr: 100, proof_des: "hi", proof_url: "hi")
 UserSkill.create(user_id: jasmine.id, skill_id: painting.id, years_exp: 8, avg_hr: 100, proof_des: "hi", proof_url: "hi")
 UserSkill.create(user_id: jasmine.id, skill_id: calligraphy.id, years_exp: 8, avg_hr: 100, proof_des: "hi", proof_url: "hi")
-UserSkill.create(user_id: jasmine.id, skill_id: calligraphy.id, years_exp: 4, avg_hr: 100, proof_des: "hi", proof_url: "hi")
 UserSkill.create(user_id: jasmine.id, skill_id: jewelry_making.id, years_exp: 3, avg_hr: 100, proof_des: "hi", proof_url: "hi")
 UserSkill.create(user_id: jasmine.id, skill_id: cooking.id, years_exp: 7, avg_hr: 100, proof_des: "hi", proof_url: "hi")
 UserSkill.create(user_id: alex.id, skill_id: songwriting.id, years_exp: 5, avg_hr: 100, proof_des: "hi", proof_url: "hi")
@@ -194,10 +192,10 @@ Barter.create(proposer_id: cindy.id, recipient_id: vero.id, proposer_skill_id: f
 Barter.create(proposer_id: trevor.id, recipient_id: vero.id, proposer_skill_id: six.id, recipient_skill_id: four.id, proposer_hours: 8, recipient_hours: 5, agreed: false)
 Barter.create(proposer_id: vero.id, recipient_id: trevor.id, proposer_skill_id: two.id, recipient_skill_id: six.id, proposer_hours: 11, recipient_hours: 10, agreed: false)
 
-Calendar.create(user_skill_id: two.id, scheduling_user_id: vero.id, barter_id: 2,recipient_user_id: trevor.id, complete: false, hours: 1)
-Calendar.create(user_skill_id: three.id, scheduling_user_id: cindy.id, barter_id: 1, recipient_user_id: vero.id, complete: false, hours: 2)
-Calendar.create(user_skill_id: one.id, scheduling_user_id: vero.id, barter_id: 1, recipient_user_id: cindy.id, complete: true, hours: 4)
-Calendar.create(user_skill_id: six.id, scheduling_user_id: trevor.id, barter_id: 2, recipient_user_id: vero.id, complete: false, hours: 2)
+Calendar.create(user_skill_id: two.id, scheduling_user_id: vero.id, barter_id: 2,recipient_user_id: trevor.id, complete: false, hours: 1, date: '2023-03-17', time: Time.parse("4:00 PM"))
+Calendar.create(user_skill_id: three.id, scheduling_user_id: cindy.id, barter_id: 1, recipient_user_id: vero.id, complete: false, hours: 2, date: '2023-03-11', time: Time.parse("2:00 PM"))
+Calendar.create(user_skill_id: one.id, scheduling_user_id: vero.id, barter_id: 1, recipient_user_id: cindy.id, complete: true, hours: 4, date: '2023-03-20', time: Time.parse("3:00 PM"))
+Calendar.create(user_skill_id: six.id, scheduling_user_id: trevor.id, barter_id: 2, recipient_user_id: vero.id, complete: false, hours: 2, date: '2023-03-15', time: Time.parse("11:00 AM"))
 
 
 Reveiw.create(user_skill_id: one.id, reviewer_id: cindy.id, reviewee_id: vero.id, barter_id: 1, calendar_id: 1, rating: 5, tile: "Veronique Is Awesome!", comment:"I recently had the pleasure of attending a programming lesson with Veronique, and I have to say, it was an absolute game-changer! Veronique is an exceptional teacher, and her ability to break down complex programming concepts into easily understandable parts is truly remarkable.Thanks to Veronique's expert guidance, I was able to learn new programming skills and techniques that I never thought possible. I highly recommend her to anyone looking to improve their programming abilities, whether you're a beginner or an experienced coder", helpful: 0,review_date: 03-04-2023)

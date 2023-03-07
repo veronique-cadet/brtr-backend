@@ -4,6 +4,7 @@ class UserSerializer < ActiveModel::Serializer
   has_many :proposed_barters
   has_many :recieved_barters
 
- 
 
+
+  
 end

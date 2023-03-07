@@ -12,4 +12,10 @@ has_many :receieved_calendars, class_name: :Calendar, foreign_key: "recipient_us
 
 has_many :reveiws, class_name: :Reveiws, foreign_key: "reviewer_id"
 has_many :reveiws, class_name: :Reveiws, foreign_key: "reviewee_id"
+
+
+
+
+
+
 end

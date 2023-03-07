@@ -1,7 +1,7 @@
 class ReveiwsController < ApplicationController
 
 def index
-render json: Reveiw.all
+render json: Reveiw.all.order(helpful: :desc)
 end
 
 def create 

@@ -1,5 +1,5 @@
 class UserSkillSerializer < ActiveModel::Serializer
-  attributes :id, :years_exp, :avg_hr, :proof_des, :proof_url, :name, :proposed_barters, :recieved_barters
+  attributes :id, :years_exp, :avg_hr, :proof_des, :proof_url, :name, :proposed_barters, :recieved_barters, :ski
   has_one :user
   has_one :skill
  

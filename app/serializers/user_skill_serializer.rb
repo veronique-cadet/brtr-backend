@@ -17,7 +17,7 @@ class UserSkillSerializer < ActiveModel::Serializer
   end
 
   def recieved_barters
-    object.user.proposed_barters
+    object.user.recieved_barters
   end
 
 end

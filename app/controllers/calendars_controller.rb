@@ -24,15 +24,15 @@ def destroy
 
 private 
 
-# def cal_params
-#     params.permit(
-#     :user_skill_id, :scheduling_user_id, :recipient_user_id, :complete, TimeParse(:date), :time,
-#     :barter_id, :hours)
-# end 
 
 def cal_params
     if params[:time].present?
       params[:time] = Time.parse(params[:time]).to_i # convert time to Unix timestamp
+    end
+
+    if params[:date].present?
+      # convert date to Time object at midnight in UTC
+      params[:date] = Time.parse("#{params[:date][0, 10]} 00:00:00.000000000 UTC")
     end
     
     params.permit(

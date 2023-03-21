@@ -252,6 +252,9 @@ Reveiw.create(user_skill_id: twentyone.id, reviewer_id: david.id, reviewee_id: e
 Reveiw.create(user_skill_id: twentyeight.id, reviewer_id: david.id, reviewee_id: jonathan.id, barter_id: 12, calendar_id: 8, rating: 2, tile: "Jonathan is Unhinged!", comment: "My lesson with Jonathan was awful. He is unhinged and has absolutely no idea what he is doing. He kept talking about different portals and not being from here. He thinks he is an alien. His yoga is not conventional at all. I do not recommend him at all! I gave him two stars because I feel bad for him! "  , helpful: 0, review_date: '2023-03-07')
 
 
+Chat.create(chater_id: vero.id, chatee_id: cindy.id)
+Chat.create(chater_id: vero.id, chatee_id: trevor.id)
+
 
 puts "seeding ended"
 

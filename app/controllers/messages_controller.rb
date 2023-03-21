@@ -15,7 +15,7 @@ end
 private
   
         def message_params
-          params.permit(:message, :messanger_id, :messangee_id)
+          params.permit(:message, :messanger_id, :messangee_id, :chat_id)
         end
   
 

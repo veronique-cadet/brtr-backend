@@ -3,4 +3,13 @@ class ChatSerializer < ActiveModel::Serializer
 
   has_one :chater
   has_one :chatee
+  has_many :messages
+
+  class MessageSerializer < ActiveModel::Serializer
+    attributes :id, :message, :created_at
+    belongs_to :chat
+    belongs_to :messanger
+    belongs_to :messangee
+  end
+
 end

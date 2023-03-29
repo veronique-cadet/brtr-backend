@@ -257,7 +257,7 @@ Chat.create(chater_id: vero.id, chatee_id: trevor.id)
 
 
 Message.create(messangee_id: 1, messanger_id:2, message: "hey", chat_id: 1)
-Message.create(messangee_id: 1, messanger_id:trevor.id, message: "hey", chat_id: 1)
+Message.create(messangee_id: 1, messanger_id:trevor.id, message: "hey", chat_id: 2)
 
 puts "seeding ended"
 

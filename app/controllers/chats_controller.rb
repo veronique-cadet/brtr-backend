@@ -7,6 +7,6 @@ class ChatsController < ApplicationController
 
     def show 
         chat = Chat.find(params[:id])
-        render json: chat, include: ['messages.messanger', 'messages.messangee']
+        render json: chat, include: ['messages.messanger', 'messages.messangee', 'messages.messanger.first_name']
     end
 end

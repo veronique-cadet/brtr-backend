@@ -8,3 +8,5 @@ class MessagesChannel < ApplicationCable::Channel
     stop_all_streams
   end
 end
+
+

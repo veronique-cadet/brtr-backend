@@ -252,12 +252,12 @@ Reveiw.create(user_skill_id: twentyone.id, reviewer_id: david.id, reviewee_id: e
 Reveiw.create(user_skill_id: twentyeight.id, reviewer_id: david.id, reviewee_id: jonathan.id, barter_id: 12, calendar_id: 8, rating: 2, tile: "Jonathan is Unhinged!", comment: "My lesson with Jonathan was awful. He is unhinged and has absolutely no idea what he is doing. He kept talking about different portals and not being from here. He thinks he is an alien. His yoga is not conventional at all. I do not recommend him at all! I gave him two stars because I feel bad for him! "  , helpful: 0, review_date: '2023-03-07')
 
 
-Chat.create(chater_id: vero.id, chatee_id: cindy.id)
-Chat.create(chater_id: vero.id, chatee_id: trevor.id)
+Chat.create(chater_id: vero.id, chatee_id: cindy.id, created_at:"2023-04-21 19:13:44.058190000 +0000" )
+Chat.create(chater_id: vero.id, chatee_id: trevor.id, created_at:"2023-04-22 19:11:44.058190000 +0000" )
 
 
-Message.create(messangee_id: 1, messanger_id:2, message: "hey", chat_id: 1)
-Message.create(messangee_id: 1, messanger_id:trevor.id, message: "hey", chat_id: 2)
+Message.create(messangee_id: 1, messanger_id:2, message: "hey", chat_id: 1, created_at:"2023-04-21 19:11:44.058190000 +0000")
+Message.create(messangee_id: 1, messanger_id:trevor.id, message: "hey", chat_id: 2, created_at:"2023-04-22 19:11:44.058190000 +0000")
 
 puts "seeding ended"
 
